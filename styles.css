@@ -1,0 +1,122 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Título principal */
+.titulo-principal {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Contenedor general: imagen + texto */
+.contenedor-principal {
+  display: flex;
+  flex-direction: column; /* Por defecto, en columna (para móviles) */
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Imagen del michi */
+.imagen-michi img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Contenido textual */
+.contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+
+/* Lista moderna */
+.caracteristicas {
+  list-style: none;
+  padding: 0;
+}
+
+.caracteristicas li {
+  background: #f0f0f0;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Enlace */
+.fuente a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fuente a:hover {
+  text-decoration: underline;
+}
+
+/* Párrafos */
+.descripcion, .fuente {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/* Media Queries */
+
+/* Pantallas medianas (tablets grandes y pequeños monitores) */
+@media (min-width: 768px) {
+  .contenedor-principal {
+    flex-direction: row; /* Ahora en fila: imagen a la izquierda, texto a la derecha */
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .imagen-michi img {
+    max-width: 400px;
+  }
+
+  .contenido {
+    max-width: 700px;
+  }
+}
+
+/* Pantallas grandes (escritorios grandes/Windows) */
+@media (min-width: 1200px) {
+  .contenedor-principal {
+    padding: 40px;
+  }
+
+  .imagen-michi img {
+    max-width: 500px;
+  }
+
+  .contenido {
+    gap: 20px;
+  }
+
+  .titulo-principal {
+    font-size: 3rem;
+  }
+}
