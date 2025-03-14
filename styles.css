@@ -120,3 +120,23 @@ body {
     font-size: 3rem;
   }
 }
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 40px;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
